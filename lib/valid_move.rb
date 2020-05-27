@@ -1,8 +1,12 @@
 # code your #valid_move? method here
 def valid_move?(board, index)
-  #first we need to check if the index is in the array of the board
-  if index.between?(0,9)
-    
+  #this first if statement is checking if the index is on the board and if the position has been taken
+  if index.between?(0,8) && position_taken?(board, index) == false
+    p true
+  elsif index > 9 || index < 0
+    p false
+  elsif position_taken?(board, index) == true
+    p false
 end
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
