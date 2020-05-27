@@ -1,7 +1,7 @@
 # code your #valid_move? method here
 def valid_move?(board, index)
   #first we need to check if the index is in the array of the board
-  if between?()
+  if index.between?(0,9)
     
 end
 
