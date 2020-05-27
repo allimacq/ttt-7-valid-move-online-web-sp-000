@@ -1,6 +1,7 @@
 # code your #valid_move? method here
 def valid_move?(board, index)
-  
+  #first we need to check if the index is in the array of the board
+  if index.between
 end
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
